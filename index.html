@@ -71,6 +71,29 @@ body {
 </style>
 </head>
 <body>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyChN5rlwBw8PNjIeGitb4WrRfMz41tGfCo",
+            authDomain: "dt-landpage.firebaseapp.com",
+            projectId: "dt-landpage",
+            storageBucket: "dt-landpage.appspot.com",
+            messagingSenderId: "249196128817",
+            appId: "1:249196128817:web:c022aff8a38f85db6ec310",
+            measurementId: "G-BQ7BVPGMS8"
+        };
+        
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>    
     <div id="dMain">
         <div id="dCompany">
             <img src="img/logodetaskv1.svg" style="width:700px;height:200px;">
